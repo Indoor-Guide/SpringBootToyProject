@@ -1,0 +1,16 @@
+/Users/leekyoungchang/Desktop/study/ssafy/third_semester/study/SpringBootToyProject/boardtoyproject/src/main/kotlin/study/kotlin/boardtoyproject/board/dto/PostDto.kt
+/Users/leekyoungchang/Desktop/study/ssafy/third_semester/study/SpringBootToyProject/boardtoyproject/src/main/kotlin/study/kotlin/boardtoyproject/common/exception/handler/GlobalExceptionHandler.kt
+/Users/leekyoungchang/Desktop/study/ssafy/third_semester/study/SpringBootToyProject/boardtoyproject/src/main/kotlin/study/kotlin/boardtoyproject/common/exception/board/BoardErrorCode.kt
+/Users/leekyoungchang/Desktop/study/ssafy/third_semester/study/SpringBootToyProject/boardtoyproject/src/main/kotlin/study/kotlin/boardtoyproject/common/exception/board/BoardNotFoundException.kt
+/Users/leekyoungchang/Desktop/study/ssafy/third_semester/study/SpringBootToyProject/boardtoyproject/src/main/kotlin/study/kotlin/boardtoyproject/board/controller/PostController.kt
+/Users/leekyoungchang/Desktop/study/ssafy/third_semester/study/SpringBootToyProject/boardtoyproject/src/main/kotlin/study/kotlin/boardtoyproject/board/entity/Post.kt
+/Users/leekyoungchang/Desktop/study/ssafy/third_semester/study/SpringBootToyProject/boardtoyproject/src/main/kotlin/study/kotlin/boardtoyproject/board/service/PostService.kt
+/Users/leekyoungchang/Desktop/study/ssafy/third_semester/study/SpringBootToyProject/boardtoyproject/src/main/kotlin/study/kotlin/boardtoyproject/common/exception/auth/InvalidIdentityTokenException.kt
+/Users/leekyoungchang/Desktop/study/ssafy/third_semester/study/SpringBootToyProject/boardtoyproject/src/main/kotlin/study/kotlin/boardtoyproject/common/exception/ResourceNotFoundException.kt
+/Users/leekyoungchang/Desktop/study/ssafy/third_semester/study/SpringBootToyProject/boardtoyproject/src/main/kotlin/study/kotlin/boardtoyproject/common/exception/dto/response/ErrorResponse.kt
+/Users/leekyoungchang/Desktop/study/ssafy/third_semester/study/SpringBootToyProject/boardtoyproject/src/main/kotlin/study/kotlin/boardtoyproject/board/repository/PostRepository.kt
+/Users/leekyoungchang/Desktop/study/ssafy/third_semester/study/SpringBootToyProject/boardtoyproject/src/main/kotlin/study/kotlin/boardtoyproject/common/exception/CustomException.kt
+/Users/leekyoungchang/Desktop/study/ssafy/third_semester/study/SpringBootToyProject/boardtoyproject/src/main/kotlin/study/kotlin/boardtoyproject/common/exception/ErrorCode.kt
+/Users/leekyoungchang/Desktop/study/ssafy/third_semester/study/SpringBootToyProject/boardtoyproject/src/main/kotlin/study/kotlin/boardtoyproject/BoardtoyprojectApplication.kt
+/Users/leekyoungchang/Desktop/study/ssafy/third_semester/study/SpringBootToyProject/boardtoyproject/src/main/kotlin/study/kotlin/boardtoyproject/common/exception/auth/AuthErrorCode.kt
+/Users/leekyoungchang/Desktop/study/ssafy/third_semester/study/SpringBootToyProject/boardtoyproject/src/main/kotlin/study/kotlin/boardtoyproject/board/dto/response/FieldErrorDto.kt
