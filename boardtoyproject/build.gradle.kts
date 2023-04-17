@@ -24,6 +24,8 @@ dependencies {
 	implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 
+	// logger
+	implementation("io.github.microutils:kotlin-logging:2.0.11")
 
 	// h2 DB 추가
 	implementation("com.h2database:h2:1.4.199")

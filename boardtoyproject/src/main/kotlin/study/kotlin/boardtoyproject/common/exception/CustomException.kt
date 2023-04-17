@@ -1,4 +1,8 @@
 package study.kotlin.boardtoyproject.common.exception
 
-class CustomException(private val errorCode: ErrorCode) : RuntimeException() {
+open class CustomException(private val errorCode: ErrorCode) : RuntimeException() {
+
+    fun getErrorCode(): ErrorCode{
+        return errorCode
+    }
 }
