@@ -1,11 +1,10 @@
 package study.kotlin.boardtoyproject.board.service
 
-import com.fasterxml.jackson.databind.RuntimeJsonMappingException
 import org.springframework.stereotype.Service
 import study.kotlin.boardtoyproject.board.dto.PostDto
 import study.kotlin.boardtoyproject.board.entity.Post
-import study.kotlin.boardtoyproject.common.exception.ResourceNotFoundException
 import study.kotlin.boardtoyproject.board.repository.PostRepository
+import study.kotlin.boardtoyproject.common.exception.board.BoardResourceNotFoundException
 import java.time.LocalDateTime
 
 
@@ -20,11 +19,10 @@ class PostService(private val postRepository: PostRepository) {
     }
 
     // id를 통해 요청 데이터를 조회
-    fun getPostById(id: Long): PostDto{
-        val post = postRepository.findById(id).orElseThrow{ ResourceNotFoundException("Post not found with id: $id") }
+    fun getPostById(id: Long): PostDto? {
+        val post = postRepository.findById(id).orElseThrow { BoardResourceNotFoundException() }
         return PostDto.fromEntity(post)
     }
-
 
     // PostDto 생성
     fun createPost(postDto: PostDto): PostDto {
@@ -39,7 +37,7 @@ class PostService(private val postRepository: PostRepository) {
 
     // post update
     fun updatePost(id: Long, postDto: PostDto): PostDto {
-        val post = postRepository.findById(id).orElseThrow{ ResourceNotFoundException("Post not found with id: $id") }
+        val post = postRepository.findById(id).orElseThrow { BoardResourceNotFoundException() }
         val updatedPost = post.copy(
                 title = postDto.title,
                 content = postDto.content,
@@ -50,8 +48,8 @@ class PostService(private val postRepository: PostRepository) {
     }
 
     // post delete
-    fun deletePost(id: Long){
-       val post = postRepository.findById(id).orElseThrow{ ResourceNotFoundException("Post not found with id: $id") }
+    fun deletePost(id: Long) {
+        val post = postRepository.findById(id).orElseThrow { BoardResourceNotFoundException() }
         postRepository.delete(post)
     }
 }

@@ -28,7 +28,6 @@ class GlobalExceptionHandler {
     private val logger = KotlinLogging.logger {}
     @ExceptionHandler(value = [CustomException::class])
     protected fun handleCustomException(e: CustomException): ResponseEntity<ErrorResponse?>? {
-        logger.error("CustomException : {}", e.getErrorCode().message)
         return ErrorResponse.toResponseEntity(e.getErrorCode())
     }
 
